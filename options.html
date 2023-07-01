@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Quote Injector Options</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      padding: 20px;
-    }
-    label {
-      display: block;
-      margin-bottom: 10px;
-    }
-    textarea {
-      width: 100%;
-      height: 200px;
-    }
-    button {
-      display: block;
-      margin-top: 10px;
-    }
-  </style>
-</head>
-<body>
-  <h1>Quote Injector Options</h1>
-  <label for="quotes">Quotes:</label>
-  <textarea id="quotes"></textarea>
-  <button id="save">Save</button>
+  <head>
+    <style>
+      body {
+        width: 300px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
 
-</body>
+      form {
+        width: 100%;
+        padding: 20px;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Text Injector</h1>
+      <p>Enter your quote:</p>
+      <input type="text" id="quoteInput" required>
+      <br><br>
+      <button type="submit">Save</button>
+      <br><br>
+      <em>Doesn't work. The quotes are hard-coded for now. It's something with the permissions. Pls let me know if you might have an idea how to fix this</em>
+    </form>
+  </body>
 </html>
