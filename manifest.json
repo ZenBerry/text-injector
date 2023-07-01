@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Quote Injector",
+  "version": "1.0",
+  "description": "Injects random quotes into every page.",
+  "permissions": ["activeTab", "storage"],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "page_action": {
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "default_popup": "options.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "content_security_policy": "script-src 'self' 'sha256-Isetixvcwlm1baHgFdMCH01faP7kx6xFxTCOQ2jgy5E=' blob: filesystem:; object-src 'self'"
+
+}
